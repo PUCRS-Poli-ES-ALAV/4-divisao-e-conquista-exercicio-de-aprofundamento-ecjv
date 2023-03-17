@@ -5,32 +5,32 @@ import java.util.Random;
 
 public class App {
 	public static void main(String[] args) {
-		 long[] A = geraVetor(16, 16);
-		// long[] auxA = new long[A.length];
+		long[] A = geraVetor(16, 16);
+		long[] auxA = new long[A.length];
 
-		// System.out.println("Vetor A original:\n" + Arrays.toString(A));
-		// mergeSort(A, auxA, 0, A.length-1);
-		// System.out.println("Vetor A ordenado:\n" + Arrays.toString(A));
+		System.out.println("Vetor A original:\n" + Arrays.toString(A));
+		mergeSort(A, auxA, 0, A.length-1);
+		System.out.println("Vetor A ordenado:\n" + Arrays.toString(A));
 		System.out.println("MaxVal1: " + maxVal1(A, A.length));
-		System.out.println("MaxVal2: " + maxVal2(A, 0, A.length-1));
+		System.out.println("MaxVal2: " + maxVal2(A, 0, A.length));
 
-		// long[] B = geraVetor(1024, 1024);
-		// long[] auxB = new long[B.length];
+		long[] B = geraVetor(1024, 1024);
+		long[] auxB = new long[B.length];
 
-		// System.out.println("Vetor B original:\n" + Arrays.toString(B));
-		// mergeSort(B, auxB, 0, B.length-1);
-		// System.out.println("Vetor B ordenado:\n" + Arrays.toString(B));
-		// System.out.println("MaxVal1: " + maxVal1(B, B.length));
-		// System.out.println("MaxVal2: " + maxVal2(B, 0, B.length));
+		System.out.println("Vetor B original:\n" + Arrays.toString(B));
+		mergeSort(B, auxB, 0, B.length-1);
+		System.out.println("Vetor B ordenado:\n" + Arrays.toString(B));
+		System.out.println("MaxVal1: " + maxVal1(B, B.length));
+		System.out.println("MaxVal2: " + maxVal2(B, 0, B.length));
 
-		// long[] C = geraVetor(524288, 524288);
-		// long[] auxC = new long[C.length];
+		long[] C = geraVetor(524288, 524288);
+		long[] auxC = new long[C.length];
 
-		// System.out.println("Vetor C original:\n" + Arrays.toString(C));
-		// mergeSort(C, auxC, 0, C.length-1);
-		// System.out.println("Vetor C ordenado:\n" + Arrays.toString(C));
-		// System.out.println("MaxVal1: " + maxVal1(C, C.length));
-		// System.out.println("MaxVal2: " + maxVal2(C, 0, C.length));
+		System.out.println("Vetor C original:\n" + Arrays.toString(C));
+		mergeSort(C, auxC, 0, C.length-1);
+		System.out.println("Vetor C ordenado:\n" + Arrays.toString(C));
+		System.out.println("MaxVal1: " + maxVal1(C, C.length));
+		System.out.println("MaxVal2: " + maxVal2(C, 0, C.length));
 	}
 
 	public static void mergeSort(long[] A, long[] aux, int ini, int fim) {
